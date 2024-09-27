@@ -1,6 +1,7 @@
 package ru.clevertec.model;
 
 public class Hobby {
+
     private String name;
 
     public String getName() {

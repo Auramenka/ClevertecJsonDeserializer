@@ -3,8 +3,10 @@ package ru.clevertec.model;
 import ru.clevertec.annotation.JsonField;
 
 public class Address {
+
     @JsonField(value = "street")
     private String street;
+
     @JsonField(value = "postal_code")
     private String postalCode;
 

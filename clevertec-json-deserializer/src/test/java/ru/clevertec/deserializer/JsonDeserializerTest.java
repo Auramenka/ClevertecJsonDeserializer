@@ -27,6 +27,6 @@ class JsonDeserializerTest {
     @Test
     public void testInvalidJsonThrowException() {
         String json = "\"full_name\":\"Hanna\", \"age\": 18, \"address\": {\"street\": \"Gorkogo\", \"postal_code\": \"246014\"}, \"married\": true, \"hobbies\":[{\"name\": \"Swimming\"}]}";
-        assertThrows(IllegalArgumentException.class, () -> JsonDeserializerVersion.deserialize(json, Person.class));
+        assertThrows(IllegalArgumentException.class, () -> new JsonDeserializer().deserialize(json, Person.class));
     }
 }
